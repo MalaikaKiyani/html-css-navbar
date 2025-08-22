@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== Header / Navbar ===== -->
+  <header>
+    <div class="logo">Adventure <span>.</span></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- ===== Sidebar ===== -->
+  <div class="sidebar" id="sidebar">
+    <span class="closebtn" onclick="toggleMenu()">×</span>
+    <a class="active" href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div>
+      <h1>NEW ADVENTURE.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a class="btn" href="#">DISCOVER NOW</a>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu(){
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
